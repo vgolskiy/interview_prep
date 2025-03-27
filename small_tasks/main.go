@@ -52,4 +52,6 @@ func main() {
 
 	fmt.Println("Read file by chunks:")
 	src.ReadFileByChunks()
+
+	fmt.Println("The highest profit: [7,1,5,3,6,4]", src.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
 }
