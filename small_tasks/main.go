@@ -54,4 +54,6 @@ func main() {
 	src.ReadFileByChunks()
 
 	fmt.Println("The highest profit: [7,1,5,3,6,4]", src.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
+
+	fmt.Println("Longest common prefix between all strings: ['ab', 'a']", src.LongestCommonPrefix([]string{"ab", "a"}))
 }
