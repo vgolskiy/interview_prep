@@ -49,4 +49,7 @@ func main() {
 	fmt.Println("Remove duplicates: [1,2,3]", n, num)
 
 	fmt.Println("Majority element in the array: [2,2,1,1,1,2,2]", src.MajorElement([]int{2, 2, 1, 1, 1, 2, 2}))
+
+	fmt.Println("Read file by chunks:")
+	src.ReadFileByChunks()
 }
