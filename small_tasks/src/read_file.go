@@ -13,7 +13,12 @@ func ReadFileByChunks() {
 		fmt.Println(err)
 		return
 	}
-	defer f.Close()
+	defer func(f *os.File) {
+		err := f.Close()
+		if err != nil {
+			fmt.Println(err)
+		}
+	}(f)
 
 	chunk := make([]byte, 1)
 	for {
